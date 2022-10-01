@@ -1,0 +1,141 @@
+#Project 1
+#Adam Altice
+#Software Foundations
+
+#Welcome Prompt
+title = "Welcome to Adam's Awesome Car Shop!"
+
+#Automate border length with border function
+def border(x):
+  borderLength = len(x)
+  border = "*" * borderLength
+  print(border)
+
+# Welcome prompt
+border(title)
+print(title)
+border(title)
+print()
+
+#Prompt for type of vehicle
+promptOne = "What type of car would you like? Please select A, B, C or D"
+
+#Question 1 border
+border(promptOne)
+print(promptOne)
+border(promptOne)
+print()
+
+# Create 4 varables for car type
+car1 = "A: Mustang"
+car2 = "B: Acura NSX"
+car3 = "C: Big ole Truck"
+car4 = "D: Jeep"
+
+#Print the variable strings for user to choose from
+print(car1)
+print(car2)
+print(car3)
+print(car4)
+
+#Declare user selection and set to variable
+answer1 = input()
+print()
+if answer1.upper() == "A":
+  selection1 = "Mustang"
+elif answer1.upper() == "B":
+  selection1 = "Acura NSX"
+elif answer1.upper() == "C":
+  selection1 = "Big ole Truck"
+elif answer1.upper() == "D":
+  selection1 = "Jeep"
+
+#Question 2
+promptTwo = ("Please type your color choice.")
+
+#Question 2 border init
+border(promptTwo)
+print(promptTwo)
+border(promptTwo)
+print()
+
+#Query user question 2
+selection2 = input()
+print()
+
+#Question 3
+promptThree =("Would you like to purchase the extended warranty for 10% more? Type 'Y' for yes or 'N' for no")
+
+#question 3 border
+border(promptThree)
+print(promptThree)
+border(promptThree)
+print()
+
+#Answer for promptThree, yes or no. Set variable
+answer3 = input()
+print()
+if answer3.upper() == "Y":
+  selection3 = "purchased Warranty"
+elif answer3.upper() == "N":
+  selection3 = "no Warranty"
+
+#Question 4
+promptFour = ("Do you want heated seats? Type 'Y' for yes or 'N' for no")
+
+#question 4 border
+border(promptFour)
+print(promptFour)
+border(promptFour)
+print()
+
+#Answer for promptFour, yes or no. Set variable
+answer4 = input()
+print()
+if answer4.upper() == "Y":
+  selection4 = "heated seats"
+elif answer4.upper() == "N":
+  selection4 = "no heated seats"
+
+#Question 5
+promptFive = ("Do you want a sunroof? Type 'Y' for yes or 'N' for no")
+
+#question 5 border
+border(promptFive)
+print(promptFive)
+border(promptFive)
+print()
+
+#Answer for promptFive, yes or no. Set variable
+answer5 = input()
+print()
+if answer5.upper() == "Y":
+  selection5 = "sunroof"
+elif answer5.upper() == "N":
+  selection5 = "no sunroof"
+
+#Question 6
+promptSix = ("Do you want paint protection? Type 'Y' for yes or 'N' for no")
+
+#question 6 border
+border(promptSix)
+print(promptSix)
+border(promptSix)
+print()
+
+#Answer for promptSix, yes or no. Set variable
+answer6 = input()
+print()
+if answer6.upper() == "Y":
+  selection6 = "paint protection"
+elif answer6.upper() == "N":
+  selection6 = "no paint protection"
+
+#Create string, use format to insert selections for user summary.
+promptSummary = ("YOUR CAR SELECTION IS:")
+border(promptSummary)
+print(promptSummary)
+border(promptSummary)
+print()
+summary = (f" Your car selection is {selection1} and your chosen color is {selection2}. You have opted for {selection4} and {selection5} features and {selection3} and {selection6}. \n\n\n")
+print(summary)
